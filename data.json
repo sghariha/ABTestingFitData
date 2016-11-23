@@ -253,7 +253,7 @@
       "index": 6
     },
     {
-      "status": null,
+      "status": "done",
       "question": "What are the effects of eating meals late at night?",
       "subquestions": [
         {
@@ -399,6 +399,10 @@
         "categories": "weight-loss",
         "question0": "",
         "question1": ""
+      },
+      {
+        "categories": "weight-loss",
+        "question0": ""
       },
       {
         "categories": "weight-loss",
@@ -570,6 +574,60 @@
         "arrayindex": "2",
         "photo1": "img/c1.png",
         "photo2": "img/c2.png"
+      },
+      {
+        "currentstatus": "done",
+        "question": "What are the effects of eating meals late at night?",
+        "subquestions": [
+          {
+            "question": "On average, how many calories do you consume 2 hours prior to going to sleep at night?",
+            "reply": ""
+          },
+          {
+            "question": "What types of food do you consume late at night?",
+            "reply": ""
+          },
+          {
+            "question": "If you suffer from heartburn, do you notice differences in heartburn when you do and don't eat late at night?",
+            "reply": ""
+          },
+          {
+            "question": "Do you eat 3 standard meals consistently throughout the day? Explain.",
+            "reply": ""
+          },
+          {
+            "question": "How often do you eat late at night in an average week?",
+            "reply": ""
+          },
+          {
+            "question": "Have you had any sudden weight gains after eating late at night? Explain.",
+            "reply": ""
+          }
+        ],
+        "breakdown": {
+          "carbs": "",
+          "protein": "",
+          "saturated": "",
+          "trans": "",
+          "sugars": ""
+        },
+        "selfinfo": {
+          "height": "",
+          "weight": "",
+          "fat": "",
+          "age": "",
+          "ethnicity": ""
+        },
+        "sendto": [],
+        "comments": "",
+        "identity": "",
+        "category": "nutrition",
+        "researcher": "yes",
+        "name": "Dr. Stofer",
+        "index": "7",
+        "arrayindex": 3,
+        "photo1": "img/h1.png",
+        "photo2": "img/h2.png"
       }
     ]
   }

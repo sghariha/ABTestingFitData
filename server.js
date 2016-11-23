@@ -11,7 +11,9 @@ var handlebars = require('express3-handlebars');
 
 
 var index = require('./routes/index');
-var index2 = require('./routes/index2');
+var indexa = require('./routes/indexa');
+var indexb = require('./routes/indexb');
+
 var askquestion = require('./routes/askquestion');
 var askquestion2 = require('./routes/askquestion2');
 var choosequestion = require('./routes/choosequestion');
@@ -51,7 +53,8 @@ if ('development' == app.get('env')) {
 
 // Add routes here
 app.get('/', index.view);
-app.get('/new', index2.view);
+app.get('/indexa', indexa.view);
+app.get('/indexb', indexb.view);
 app.get('/askquestion', askquestion.view);
 app.get('/askquestion2', askquestion2.view);
 

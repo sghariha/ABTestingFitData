@@ -23,58 +23,48 @@
       </ul>
     </div>
   </nav>
-
-  <div class ="container">
-    <br> <br>
-    <div class="jumbotron jumbotron-fluid">
-      <div class="container">
-        <h1 class="display-3">Resume answering a question</h1>
-        <p class="lead">Help researchers understand health by finishing your response.</p>
+  <!-- BODY -->
+  <section id = "tbody-id" class = "tbody-class" style = "margin-top: 100px;">
+    <div class = "container">
+      <div class = "row">
+        <div class = "col-lg-3" style = "text-align: center;">
+          <a class = "firstRD" href = "/askquestion"><h1 class = "step">STEP 1</h1><img src ="img/edit.png"></a>
+          <p>Ask Health Question</p>
+        </div>
+        <div class = "col-lg-3" style = "text-align: center;">
+          <a class = "secondRD" href = "/choosequestion"><h1 class = "step">STEP 2</h1><img src ="img/file.png"></a>
+          <p>Answer Health Question</p>
+        </div>
+        <div class = "col-lg-3" style = "text-align: center;">  
+          <a class = "thirdRD" href = "/resume"><h1 class = "step">STEP 3</h1><img src ="img/list.png"></a>
+          <p>Resume Answering Question</p>
+        </div>
+        <div class = "col-lg-3" style = "text-align: center;">
+          <a class = "fourthRD" href = "/previouscontribution"><h1 class = "step">STEP 4</h1><img src ="img/success.png"></a>
+          <p>Previous Contributions</p>
+        </div>
       </div>
     </div>
-<div class = "row">
-{{#responses}}
-{{#unless currentstatus}}
-<div class = "col-xs-12">
-  <div class = "card card-block">
+  </section>
 
-<h3 class="card-title">{{question}} <span class="tag tag-default {{category}}" style = "font-size: 0.6em;">{{category}}</span></h3>
+<br> <br> <br>
+  <!-- bottom body -->
+  <section id = "bbody-id" class = "bbody-class">
+      <div class = "container">
+        <div class = "row">
+          <div class = "col-lg-12" style = "text-align: center;">
+            <h2>Tutorial</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/N_qG2HQKqVk" frameborder="0" allowfullscreen></iframe>
+          </div>
 
-<p class="card-text">Help {{name}} with some few {{category}} questions. </p>
-
-
-  <form id ="choosequestionForm" role="form" method="get" action="/resumequestion">
-    <!-- Choose a category -->
-    <div class = "form-group" style = "display: none;">
-        <textarea class = "form-control" id="exampleTextArea" rows="5" name ="question">{{question}}</textarea>
-    </div>
-
-
-    <div style = "display: none;">
-    <div class="form-group">
-      <label for="usr">Amount of carbs (grams)</label>
-      <input type="text" class="form-control" id="usr" name="arrayindex" value = "{{arrayindex}}">
-    </div>
-  </div>
-
-
-    <button type="submit" value ="done" class="btn btn-primary">Resume</button>
-  </form>
-</div>
-</div>
-{{/unless}}
-{{/responses}}
-</div>
-
-  <br> <br>
-  <!--<a href = "/" style="padding-left: 25px;">  <button type="button" class="btn btn-danger">Quit</button></a> -->
-
-</div>
-
+        </div>
+      </div>
+  </section>
   <!-- FOOTER -->
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js" integrity="sha384-VjEeINv9OSwtWFLAtmc4JCtEJXXBub00gtSnszmspDLCtC0I4z4nqz7rEFbIZLLU" crossorigin="anonymous"></script>
+  <script src = "/js/indexb.js"></script>
   <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
