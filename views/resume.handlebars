@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>FitData</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" integrity="sha384-2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous">
+  <link href = "css/styles.css" rel = "stylesheet">
+</head>
+<body>
+  <!-- HEADER -->
+  <nav class="navbar navbar-dark bg-inverse">
+    <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2" aria-controls="exCollapsingNavbar2" aria-expanded="false" aria-label="Toggle navigation">
+      &#9776;
+    </button>
+    <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2">
+      <a class="navbar-brand" href="/">FitData</a>
+      <ul class="nav navbar-nav">
+
+        <li class="nav-item">
+          <a class="nav-link" href="/">Home</a>
+        </li>
+
+      </ul>
+    </div>
+  </nav>
+
+  <div class ="container">
+    <br> <br>
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-3">Resume answering a question</h1>
+        <p class="lead">Help researchers understand health by finishing your response.</p>
+      </div>
+    </div>
+<div class = "row">
+{{#responses}}
+{{#unless currentstatus}}
+<div class = "col-xs-12">
+  <div class = "card card-block">
+
+<h3 class="card-title">{{question}} <span class="tag tag-default {{category}}" style = "font-size: 0.6em;">{{category}}</span></h3>
+
+<p class="card-text">Help {{name}} with some few {{category}} questions. </p>
+
+
+  <form id ="choosequestionForm" role="form" method="get" action="/resumequestion">
+    <!-- Choose a category -->
+    <div class = "form-group" style = "display: none;">
+        <textarea class = "form-control" id="exampleTextArea" rows="5" name ="question">{{question}}</textarea>
+    </div>
+
+
+    <div style = "display: none;">
+    <div class="form-group">
+      <label for="usr">Amount of carbs (grams)</label>
+      <input type="text" class="form-control" id="usr" name="arrayindex" value = "{{arrayindex}}">
+    </div>
+  </div>
+
+
+    <button type="submit" value ="done" class="btn btn-primary">Resume</button>
+  </form>
+</div>
+</div>
+{{/unless}}
+{{/responses}}
+</div>
+
+  <br> <br>
+  <!--<a href = "/" style="padding-left: 25px;">  <button type="button" class="btn btn-danger">Quit</button></a> -->
+
+</div>
+
+  <!-- FOOTER -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js" integrity="sha384-VjEeINv9OSwtWFLAtmc4JCtEJXXBub00gtSnszmspDLCtC0I4z4nqz7rEFbIZLLU" crossorigin="anonymous"></script>
+</body>

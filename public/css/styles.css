@@ -1,0 +1,53 @@
+body {
+	background-color: white;
+}
+
+.step {
+	border: 3px solid navy;
+}
+
+.login-panel {
+	margin-top: 80px;
+	margin-bottom: 80px;
+}
+
+.login-form {
+	margin: 0 auto;
+	max-width: 400px;
+	padding: 15px 40px 50px;
+	background-color: black;
+}
+
+.login-header {
+	font-size: 50px;
+}
+
+.form-control {
+	padding: 10px;
+	position: relative;
+	font-size: 20px;
+	height: auto;
+}
+
+.unInput {
+	margin-bottom: 20px;
+}
+
+.pwInput {
+	margin-bottom: 20px;
+}
+
+
+.progress {border-radius:25px; }
+
+.weight-gain {background-color: #0275d8;}
+
+
+
+.sleep {background-color: #5bc0de}
+
+.lifestyle {background-color: orange;}
+
+.nutrition {background-color: green;}
+
+.fitness {background-color: brown;}
